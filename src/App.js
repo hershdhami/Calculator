@@ -110,6 +110,9 @@ function evaluate ({ currentOperand, previousOperand, operation }) {
 function App() {
   const [{currentOperand, previousOperand, operation}, dispatch] = useReducer(reducer, {})
 
+  //Used to create random numbers for use in the DigitalButton
+  const randomNum = Math.floor(Math.random() * 11);
+
   return (
     <div className='calculator-grid'> 
       <div className='output'>
